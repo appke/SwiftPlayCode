@@ -21,10 +21,29 @@ class ViewController: UIViewController {
         button.setTitleColor(.red, for: .normal)
         button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
         view.addSubview(button)
+        
+//        sum(abc: 2,  cba: 3)
+        sum2(num1: 2, num2: 2)
+        sum2(num1: 3, num2: 4)
+        
+        sum3(3, 2)
+        
     }
     
     func buttonClick() {
         print("点击按钮");
+    }
+    
+    func sum(abc num1 : Int, cba num2 : Int) -> Int {
+        return num1 + num2
+    }
+    
+    func sum2(num1 : Int, num2 : Int) -> Int {
+        return num1 + num2
+    }
+    
+    func sum3(_ num1 : Int, _ num2 : Int) -> Int {
+        return num1 + num2
     }
 }
 
