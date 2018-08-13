@@ -11,7 +11,6 @@ import UIKit
 
 
 
-
 class ViewController: UIViewController {
     
     lazy var str: String = {
